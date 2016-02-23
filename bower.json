@@ -1,10 +1,10 @@
 {
-  "name": "ng-friends",
-  "homepage": "https://github.com/iknsa-formation/angular-course-friends-crud-with-backend",
+  "name": "iknsa-angular-1.x-course",
+  "homepage": "https://github.com/iknsa-formation/angular",
   "authors": [
     "Khalid Sookia <khalidsookia@gmail.com>"
   ],
-  "description": "",
+  "description": "iKNSA AngularJS course",
   "main": "",
   "moduleType": [
     "amd"
