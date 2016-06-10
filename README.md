@@ -21,7 +21,7 @@ $ sudo npm install -g bower
 
 Once you have everything installed properly clone the repository and install bower dependencies:
 ```
-$ git clone https://github.com/iknsa-formation/angular.git
+$ git clone https://github.com/iknsa-formation/angularjs-1.5.x.git angular
 $ cd angular
 $ bower install
 ```
