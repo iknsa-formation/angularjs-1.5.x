@@ -1,6 +1,6 @@
 {
-  "name": "iknsa-angular-1.x-course",
-  "homepage": "https://github.com/iknsa-formation/angular",
+  "name": "iknsa-angular-1.5-course",
+  "homepage": "https://github.com/iknsa-formation/angularjs-1.5.x",
   "authors": [
     "Khalid Sookia <khalidsookia@gmail.com>"
   ],
@@ -18,8 +18,8 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "3.3.6",
-    "angular": "1.5.6",
-    "angular-route": "^1.5.0"
+    "bootstrap": "3.3",
+    "angular": "1.5",
+    "angular-route": "^1.5"
   }
 }
