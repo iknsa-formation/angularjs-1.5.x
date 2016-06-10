@@ -1,9 +1,10 @@
-### AngularJS course with friends api
+# AngularJS course with friends api
 
 Prefer a unix base system instead of windows as some node modules dont work properly on windows.
 
-### *** If you must use windows, install [Git Scm](http://www.git-scm.com/) and run all your commands from git bash ***
-#### Install
+**If you must use windows, install [Git Scm](http://www.git-scm.com/) and run all your commands from git bash**
+
+## Install
 
 Ensure that you have npm, bower and git installed:
 ```
