@@ -31,8 +31,36 @@
     </header>
 
     <div class="row-fluid">
-        <main class="container-fluid">
+        <main class="container-fluid" ng-app="">
             <!-- Contents goes here -->
+            <div class="well">
+                <h3>Arithmetics : Cast string value to integer using text fiels</h3>
+                <input type="text" name="text1" ng-model="text1"> +
+                <input type="text" name="text2" ng-model="text2">
+                <br>
+                <b>{{ (text1 - 0) + (text2 - 0) }}</b>
+            </div>
+            <div class="well">
+                <h3>Arithmetics in templates</h3>
+                <b>50/26</b> = {{ 50 / 26 }}
+                <hr>
+                <input type="number" name="" ng-model="first"> +
+                <input type="number" name="" ng-model="second">
+                {{ first + second }}
+            </div>
+            <div class="well">
+                <h3>DataBinding with HTML5</h3>
+                <label>What's your name: </label><input type="text" name="name" ng-model="name"><br>
+                <span>Your name is : <b>{{ name }}</b></span>
+                <hr>
+                <label>What's your age: </label><input type="number" name="name" ng-model="age"><br>
+                <span>Your name is : <b>{{ age }}</b></span>
+            </div>
+            <div class="well">
+                <h3>DataBinding</h3>
+                <label>What's your name: </label><input type="text" name="name" ng-model="name" ng-model-options="{ updateOn: 'blur' }"><br>
+                <span>Your name is : <b>{{ name }}</b></span>
+            </div>
         </main>
     </div>
 
