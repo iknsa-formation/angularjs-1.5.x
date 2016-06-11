@@ -8,6 +8,8 @@
 .banner {
     position: relative;
     margin:0 -15px 30px;
+    max-height: 300px;
+    overflow: hidden;
 }
 
 .banner img {
@@ -20,7 +22,6 @@
     top: 50%;
     width: 100%;
     text-align: center;
-    color: white;
 }
 
 textarea {

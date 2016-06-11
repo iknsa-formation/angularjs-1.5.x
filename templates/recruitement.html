@@ -1,84 +1,36 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>iKNSA - ng course</title>
-    <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../styles/style.css">
-    <script src="../bower_components/angular/angular.min.js"></script>
-    <script src="../bower_components/angular-route/angular-route.min.js"></script>
-    <script src="../scripts/app.js"></script>
-</head>
-<body>
-    <header class="row-fluid">
-        <nav class="navbar navbar-inverse">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="home.html">iKNSA Angular course</a>
-            </div>
+<div class="banner">
+    <img src="img/jaune.jpg" alt="">
+    <h2>Vous êtes sur la page de recrutement</h2>
+</div>
 
-            <div class="container-fluid">
-                <ul class="nav navbar-nav">
-                    <li><a href="home.html">Accueil</a></li>
-                    <li><a href="about.html">A propos</a></li>
-                    <li><a href="recruitement.html">Recrutement</a></li>
-                    <li><a href="quotation.html">Demande de devis</a></li>
-                    <li><a href="friends.html">Friends</a></li>
-                    <li><a href="friend-new.html">New Friends</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <div class="row-fluid">
-        <main class="container-fluid">
-          <div class="banner">
-              <img src="../img/jaune.jpg" alt="">
-              <h2>Vous êtes sur la page de recrutement</h2>
-          </div>
-
-          <form class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-            <div class="form-group">
-              <label for="contactName">Name</label>
-              <input type="text" class="form-control" id="contactName" placeholder="Name" name="contactName">
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="text" class="form-control" id="email" placeholder="Email" name="email">
-            </div>
-            <div class="form-group">
-              <label for="tel">Tel:</label>
-              <input type="text" class="form-control" id="tel" placeholder="tel" name="tel">
-            </div>
-            <div class="form-group">
-              <label for="mobile">Mobile</label>
-              <input type="text" class="form-control" id="mobile" placeholder="Mobile" name="mobile">
-            </div>
-            <div class="form-group">
-              <label for="cv">CV</label>
-              <input type="file" name="cv" id="cv">
-            </div>
-            <div class="form-group">
-              <label for="lm">Lettre de motivation</label>
-              <input type="file" name="lm" id="lm">
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea name="message" id="message" class="form-control"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-
-        </main>
-    </div>
-
-    <div class="clearfix"></div>
-    <hr>
-    <div class="row-fluid">
-        <footer>
-            <div class="jumbotron">
-                <h2 class="text-center">My Great angular app</h2>
-            </div>
-        </footer>
-    </div>
-</body>
-</html>
+<form class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+  <div class="form-group">
+    <label for="contactName">Name</label>
+    <input type="text" class="form-control" id="contactName" placeholder="Name" name="contactName">
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="text" class="form-control" id="email" placeholder="Email" name="email">
+  </div>
+  <div class="form-group">
+    <label for="tel">Tel:</label>
+    <input type="text" class="form-control" id="tel" placeholder="tel" name="tel">
+  </div>
+  <div class="form-group">
+    <label for="mobile">Mobile</label>
+    <input type="text" class="form-control" id="mobile" placeholder="Mobile" name="mobile">
+  </div>
+  <div class="form-group">
+    <label for="cv">CV</label>
+    <input type="file" name="cv" id="cv">
+  </div>
+  <div class="form-group">
+    <label for="lm">Lettre de motivation</label>
+    <input type="file" name="lm" id="lm">
+  </div>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea name="message" id="message" class="form-control"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
