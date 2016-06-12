@@ -1,0 +1,13 @@
+<div class="jumbotron">
+    <div style="padding:30px;border: 1px solid red">
+        <div ng-controller="TestCtrl">
+            <p> {{who}}, {{what}}!</p>
+            <div style="padding:30px;border: 1px solid blue" ng-controller="ChildCtrl">
+                <p> {{who}}, {{what}}!</p>
+                <div style="padding:30px;border: 1px solid green" ng-controller="GrandChildCtrl">
+                    <p> {{who}}, {{what}}!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

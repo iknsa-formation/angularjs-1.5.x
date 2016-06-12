@@ -72,4 +72,17 @@ app.controller('RecruitementCtrl', ['$scope', function ($scope) {
 
 app.controller('TestCtrl', ['$scope', function ($scope) {
     console.log('in TestCtrl');
+    $scope.who = ' tu';
+    $scope.what = ' vas bien? ';
+}]);
+
+app.controller('ChildCtrl', ['$scope', function($scope){
+    console.log('ChildCtrl');
+    $scope.what = ' bien ou bienne? ';
+}]);
+
+app.controller('GrandChildCtrl', ['$scope', function($scope){
+    console.log('GrandChildCtrl');
+    $scope.who = ' Noemie';
+    $scope.what = ' tu vas bien?';
 }]);
