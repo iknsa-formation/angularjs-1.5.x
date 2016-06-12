@@ -103,12 +103,12 @@ app.controller('GrandChildCtrl', ['$scope', function($scope){
 
 app.controller('BroadcastCtrl', function($rootScope, $scope){
     $scope.send = function(){
-        $rootScope.$broadcast('BOOM!', $scope.name)
+        $rootScope.$broadcast('importantName', $scope.name)
     }
 });
 
 app.controller('ReciverCtrl', function($scope){
-  $scope.$on('BOOM!', function(events, args){
+  $scope.$on('importantName', function(events, args){
     console.log(args);
     $scope.name = args;
   })
