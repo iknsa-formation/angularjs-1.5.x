@@ -34,6 +34,13 @@ app.config(function($routeProvider) {
     });
 });
 
+app.directive('maDirective', function() {
+    return {
+        restrict: 'AE',
+        template: '<h1>My new directive</h1>'
+    }
+});
+
 app.controller('ErrorCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
     console.log('in ErrorCtrl');
     console.log('Error code: ' + $routeParams.code);
