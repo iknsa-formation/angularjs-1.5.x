@@ -44,30 +44,51 @@ app.directive('maDirective', function() {
 app.controller('ErrorCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
     console.log('in ErrorCtrl');
     console.log('Error code: ' + $routeParams.code);
+
+    $scope.imgName = 'violet';
+    $scope.pageTitle = 'Ooops... Je ne trouve pas cette page';
 }]);
 
 app.controller('AppCtrl', ['$scope', function ($scope) {
     console.log('in AppCtrl');
+
+    $scope.imgName = 'rouge';
+    $scope.pageTitle = 'Vous êtes sur la page d\'accueil';
 }]);
 
 app.controller('AboutCtrl', ['$scope', function ($scope) {
     console.log('in AboutCtrl');
+
+    $scope.imgName = 'bleu';
+    $scope.pageTitle = 'Vous êtes sur la page a porpos';
 }]);
 
 app.controller('ContactCtrl', ['$scope', function ($scope) {
     console.log('in ContactCtrl');
+
+    $scope.imgName = 'violet';
+    $scope.pageTitle = 'Vous êtes sur la page de contact';
 }]);
 
 app.controller('FriendsCtrl', ['$scope', function ($scope) {
     console.log('in FriendsCtrl');
+
+    $scope.imgName = 'violet';
+    $scope.pageTitle = 'Vous êtes sur la page de d\'ajout d\'un ami';
 }]);
 
 app.controller('QuotationCtrl', ['$scope', function ($scope) {
     console.log('in QuotationCtrl');
+
+    $scope.imgName = 'vert';
+    $scope.pageTitle = 'Vous êtes sur la page de devis';
 }]);
 
 app.controller('RecruitementCtrl', ['$scope', function ($scope) {
     console.log('in RecruitementCtrl');
+
+    $scope.imgName = 'jaune';
+    $scope.pageTitle = 'Vous êtes sur la page de recrutement';
 }]);
 
 app.controller('TestCtrl', ['$scope', function($scope){
