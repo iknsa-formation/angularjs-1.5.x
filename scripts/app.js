@@ -105,6 +105,17 @@ app.controller('BroadcastCtrl', function($rootScope, $scope){
     $scope.send = function(){
         $rootScope.$broadcast('importantName', $scope.name)
     }
+
+    $scope.name = "Misko Hevery";
+
+    $scope.$watch('name', function(newValue, oldValue) {
+        console.log('New value: ' + newValue);
+        console.log('Old value: ' + oldValue);
+
+        if(newValue === 'Khalid Sookia') {
+            $rootScope.$broadcast('importantName', $scope.name);
+        }
+    });
 });
 
 app.controller('ReciverCtrl', function($scope){
