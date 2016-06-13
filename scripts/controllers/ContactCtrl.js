@@ -7,6 +7,9 @@ app.controller('ContactCtrl', ['$scope', 'ContactFactory', function ($scope, Con
 
     $scope.new = function(contact) {
 
+        ContactFactory.new(contact);
+        console.log(ContactFactory.contacts);
+
         $scope.contact = {};
         $scope.form.$setPristine();
         $scope.form.$setUntouched();
