@@ -14,15 +14,9 @@ app.config(function($routeProvider) {
     }).when('/contact', {
         controller: 'ContactCtrl',
         templateUrl: 'templates/contact.html'
-    }).when('/friends', {
-        controller: 'FriendsCtrl',
-        templateUrl: 'templates/friends.html'
-    }).when('/quotation', {
-        controller: 'QuotationCtrl',
-        templateUrl: 'templates/quotation.html'
-    }).when('/recruitement', {
-        controller: 'RecruitementCtrl',
-        templateUrl: 'templates/recruitement.html'
+    }).when('/contact/new', {
+        controller: 'ContactCtrl',
+        templateUrl: 'templates/contact-new.html'
     }).when('/test', {
         controller: 'TestCtrl',
         templateUrl: 'templates/test.html'
@@ -68,27 +62,6 @@ app.controller('ContactCtrl', ['$scope', function ($scope) {
 
     $scope.imgName = 'violet';
     $scope.pageTitle = 'Vous êtes sur la page de contact';
-}]);
-
-app.controller('FriendsCtrl', ['$scope', function ($scope) {
-    console.log('in FriendsCtrl');
-
-    $scope.imgName = 'violet';
-    $scope.pageTitle = 'Vous êtes sur la page de d\'ajout d\'un ami';
-}]);
-
-app.controller('QuotationCtrl', ['$scope', function ($scope) {
-    console.log('in QuotationCtrl');
-
-    $scope.imgName = 'vert';
-    $scope.pageTitle = 'Vous êtes sur la page de devis';
-}]);
-
-app.controller('RecruitementCtrl', ['$scope', function ($scope) {
-    console.log('in RecruitementCtrl');
-
-    $scope.imgName = 'jaune';
-    $scope.pageTitle = 'Vous êtes sur la page de recrutement';
 }]);
 
 app.controller('TestCtrl', ['$scope', function($scope){
