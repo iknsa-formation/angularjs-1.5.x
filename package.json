@@ -1,0 +1,24 @@
+{
+  "name": "angularjs-1.5.x-course",
+  "version": "1.0.0",
+  "description": "Prefer a unix base system instead of windows as some node modules dont work properly on windows.",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "~0.4.5",
+    "grunt-browser-sync": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iknsa-formation/angularjs-1.5.x.git"
+  },
+  "author": "Khalid Sookia <khalidsookia@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iknsa-formation/angularjs-1.5.x/issues"
+  },
+  "homepage": "https://github.com/iknsa-formation/angularjs-1.5.x#readme"
+}
