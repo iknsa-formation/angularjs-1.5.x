@@ -1,12 +1,13 @@
-app.controller('ContactCtrl', ['$scope', function ($scope) {
+app.controller('ContactCtrl', ['$scope', 'ContactFactory', function ($scope, ContactFactory) {
     console.log('in ContactCtrl');
+    console.log(ContactFactory.contacts);
 
     $scope.imgName = 'violet';
     $scope.pageTitle = 'Vous êtes sur la page de contact';
 
     $scope.new = function(contact) {
-        $scope.contact = {};
 
+        $scope.contact = {};
         $scope.form.$setPristine();
         $scope.form.$setUntouched();
     };
