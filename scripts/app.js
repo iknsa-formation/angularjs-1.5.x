@@ -62,6 +62,10 @@ app.controller('ContactCtrl', ['$scope', function ($scope) {
 
     $scope.imgName = 'violet';
     $scope.pageTitle = 'Vous êtes sur la page de contact';
+
+    $scope.new = function(contact) {
+        console.log(contact);
+    };
 }]);
 
 app.controller('TestCtrl', ['$scope', function($scope){
