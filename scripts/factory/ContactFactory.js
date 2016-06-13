@@ -28,5 +28,21 @@ app.factory('ContactFactory', [function () {
         ContactFactory.contacts[contact.email] = contact;
     };
 
+    ContactFactory.list = function() {
+        return ContactFactory.contacts;
+    }
+
+    ContactFactory.update = function(contact) {
+        ContactFactory.contacts[contact.email] = contact;
+    }
+
+    ContactFactory.delete = function(contact) {
+        delete ContactFactory.contacts[contact];
+    }
+
+    ContactFactory.get = function(contact) {
+        return ContactFactory.contacts[contact.email];
+    }
+
     return ContactFactory;
 }])
