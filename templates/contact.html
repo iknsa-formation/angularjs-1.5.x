@@ -3,24 +3,34 @@
     <h2>{{ pageTitle }}</h2>
 </div>
 
-<form class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-  <div class="form-group">
-    <label for="name">Name</label>
-    <input type="text" class="form-control" id="name" placeholder="Name" name="name">
-  </div>
-  <div class="form-group">
-    <label for="email">Email</label>
-    <input type="text" class="form-control" id="email" placeholder="Email" name="email">
-  </div>
-  <div class="form-group">
-    <label for="message">Message</label>
-    <textarea name="message" id="message" class="form-control"></textarea>
-  </div>
-  </div>
-  <div class="checkbox">
-    <label for="tnc">
-      <input type="checkbox" name="tnc" id="tnc"> Terms and conditions
-    </label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+<table class="table table-hover table-bordered">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Message</th>
+      <th>T&C</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Khalid Sookia</td>
+      <td>khalid.sookia@iknsa.com</td>
+      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</td>
+      <td><span class="btn btn-success"></span></td>
+    </tr>
+    <tr>
+      <td>Khalid Sookia</td>
+      <td>khalid.sookia@iknsa.com</td>
+      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</td>
+      <td><span class="btn btn-success"></span></td>
+    </tr>
+    <tr>
+      <td>Khalid Sookia</td>
+      <td>khalid.sookia@iknsa.com</td>
+      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</td>
+      <td><span class="btn btn-success"></span></td>
+    </tr>
+  </tbody>
+</table>
