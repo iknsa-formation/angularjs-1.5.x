@@ -64,7 +64,10 @@ app.controller('ContactCtrl', ['$scope', function ($scope) {
     $scope.pageTitle = 'Vous êtes sur la page de contact';
 
     $scope.new = function(contact) {
-        console.log(contact);
+        $scope.contact = {};
+
+        $scope.form.$setPristine();
+        $scope.form.$setUntouched();
     };
 }]);
 
