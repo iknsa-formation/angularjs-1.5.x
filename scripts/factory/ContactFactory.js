@@ -24,5 +24,9 @@ app.factory('ContactFactory', [function () {
         },
     };
 
+    ContactFactory.create = function(contact) {
+        ContactFactory.contacts[contact.email] = contact;
+    };
+
     return ContactFactory;
 }])
