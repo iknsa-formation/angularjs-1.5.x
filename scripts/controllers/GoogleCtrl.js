@@ -1,6 +1,14 @@
-app.controller('GoogleCtrl', ['$scope', 'GoogleService', function ($scope, GoogleService) {
-    var google = GoogleService;
-    console.log(google);
+app.controller('GoogleCtrl', ['$scope', '$http', function ($scope, $http) {
 
-    $scope.data = google;
+    this.getGoogle = $http({
+      method: 'GET',
+      url: 'http://localhost:3000/#/'
+    })
+    .then(function successCallback(response) {
+        console.log('success');
+        $scope.data = response.data;
+
+    }, function errorCallback(response) {
+        console.log('error');
+    });
 }])
