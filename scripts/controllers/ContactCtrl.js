@@ -1,4 +1,4 @@
-app.controller('ContactCtrl', ['$scope', 'ContactFactory', '$routeParams', function ($scope, ContactFactory, $routeParams) {
+app.controller('ContactCtrl', ['$scope', 'ContactFactory', '$routeParams', '$location', function ($scope, ContactFactory, $routeParams, $location) {
     console.log('in ContactCtrl');
 
     $scope.imgName = 'violet';
@@ -27,5 +27,6 @@ app.controller('ContactCtrl', ['$scope', 'ContactFactory', '$routeParams', funct
 
     if ($routeParams.action === 'delete') {
         ContactFactory.delete($routeParams.email);
+        $location.path('/contact');
     }
 }]);
