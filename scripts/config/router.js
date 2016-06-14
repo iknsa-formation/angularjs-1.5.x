@@ -8,7 +8,10 @@ app.config(function($routeProvider) {
         templateUrl: 'templates/about.html'
     }).when('/contact', {
         controller: 'ContactCtrl',
-        templateUrl: 'templates/contact.html'
+        templateUrl: 'templates/contact.html',
+    }).when('/contact/:email/:action', {
+        controller: 'ContactCtrl',
+        templateUrl: 'templates/contact-edit.html'
     }).when('/contact/new', {
         controller: 'ContactCtrl',
         templateUrl: 'templates/contact-new.html'

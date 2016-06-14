@@ -1,34 +1,31 @@
-app.controller('ContactCtrl', ['$scope', 'ContactFactory', function ($scope, ContactFactory) {
+app.controller('ContactCtrl', ['$scope', 'ContactFactory', '$routeParams', function ($scope, ContactFactory, $routeParams) {
     console.log('in ContactCtrl');
-    console.log(ContactFactory.list());
 
     $scope.imgName = 'violet';
     $scope.pageTitle = 'Vous êtes sur la page de contact';
 
-    $scope.new = function(contact) {
+    if($routeParams.action === 'edit') {
+        $scope.contact = ContactFactory.get($routeParams.email);
+    }
 
-        console.log(ContactFactory.contacts[contact.email]);
+    $scope.new = function(contact) {
         ContactFactory.create(contact);
-        console.log(ContactFactory.list());
 
         $scope.contact = {};
         $scope.form.$setPristine();
         $scope.form.$setUntouched();
     };
 
-    $scope.list = function() {
-        ContactFactory.list();
-    };
+    $scope.list = ContactFactory.list();
 
     $scope.update = function(contact) {
         ContactFactory.update(contact);
+
+        $scope.form.$setPristine();
+        $scope.form.$setUntouched();
     };
 
-    $scope.delete = function (contact) {
-        ContactFactory.delete(contact);
-    };
-
-    $scope.get = function(contact) {
-        var contact = ContactFactory.get(contact);
-    };
+    if ($routeParams.action === 'delete') {
+        ContactFactory.delete($routeParams.email);
+    }
 }]);

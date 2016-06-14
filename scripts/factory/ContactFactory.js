@@ -34,14 +34,15 @@ app.factory('ContactFactory', [function () {
 
     ContactFactory.update = function(contact) {
         ContactFactory.contacts[contact.email] = contact;
+        console.log(ContactFactory.contacts);
     }
 
-    ContactFactory.delete = function(contact) {
-        delete ContactFactory.contacts[contact];
+    ContactFactory.delete = function(contactMail) {
+        delete ContactFactory.contacts[contactMail];
     }
 
-    ContactFactory.get = function(contact) {
-        return ContactFactory.contacts[contact.email];
+    ContactFactory.get = function(contactMail) {
+        return ContactFactory.contacts[contactMail];
     }
 
     return ContactFactory;

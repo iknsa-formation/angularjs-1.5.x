@@ -7,27 +7,20 @@
       <th>Email</th>
       <th>Message</th>
       <th>T&C</th>
+      <th>Actions</th>
     </tr>
   </thead>
 
   <tbody>
-    <tr>
-      <td>Khalid Sookia</td>
-      <td>khalid.sookia@iknsa.com</td>
-      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</td>
-      <td><span class="btn btn-success"></span></td>
-    </tr>
-    <tr>
-      <td>Khalid Sookia</td>
-      <td>khalid.sookia@iknsa.com</td>
-      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</td>
-      <td><span class="btn btn-success"></span></td>
-    </tr>
-    <tr>
-      <td>Khalid Sookia</td>
-      <td>khalid.sookia@iknsa.com</td>
-      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</td>
-      <td><span class="btn btn-success"></span></td>
+    <tr ng-repeat="contact in list">
+      <td>{{ contact.name }}</td>
+      <td>{{ contact.email }}</td>
+      <td>{{ contact.message }}</td>
+      <td><span ng-if="contact.tnc" class="btn btn-success"></span></td>
+      <td>
+        <a ng-href="#/contact/{{ contact.email }}/edit" class="btn btn-primary">Modifier</a>
+        <a ng-href="#/contact/{{ contact.email }}/delete" class="btn btn-danger">Supprimer</a>
+      </td>
     </tr>
   </tbody>
 </table>
