@@ -25,24 +25,35 @@ app.factory('ContactFactory', [function () {
     };
 
     ContactFactory.create = function(contact) {
-        ContactFactory.contacts[contact.email] = contact;
+        var contacts = ContactFactory.list();
+        contacts[contact.email] = contact;
+        localStorage.setItem('contacts', JSON.stringify(contacts));
     };
 
     ContactFactory.list = function() {
-        return ContactFactory.contacts;
+        var savedContacts = localStorage.getItem('contacts');
+        var contacts = (savedContacts !== null) ? JSON.parse(savedContacts) : ContactFactory.contacts;
+        console.log(contacts);
+        localStorage.setItem('contacts', JSON.stringify(contacts));
+
+        return contacts;
     }
 
     ContactFactory.update = function(contact) {
-        ContactFactory.contacts[contact.email] = contact;
-        console.log(ContactFactory.contacts);
+        var contacts = ContactFactory.list();
+        contacts[contact.email] = contact;
+        localStorage.setItem('contacts', JSON.stringify(contacts));
     }
 
     ContactFactory.delete = function(contactMail) {
-        delete ContactFactory.contacts[contactMail];
+        var contacts = ContactFactory.list();
+        delete contacts[contactMail];
+        localStorage.setItem('contacts', JSON.stringify(contacts));
     }
 
     ContactFactory.get = function(contactMail) {
-        return ContactFactory.contacts[contactMail];
+        var contacts = ContactFactory.list();
+        return contacts[contactMail];
     }
 
     return ContactFactory;
