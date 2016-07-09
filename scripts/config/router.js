@@ -18,9 +18,9 @@ app.config(function($routeProvider) {
     }).when('/test', {
         controller: 'TestCtrl',
         templateUrl: 'templates/test.html'
-    }).when('/google', {
-        controller: 'GoogleCtrl',
-        templateUrl: 'templates/google.html'
+    }).when('/http/get', {
+        controller: 'HttpCtrl',
+        templateUrl: 'templates/http/get.html'
     }).when('/error/:code', {
         controller: 'ErrorCtrl',
         templateUrl: 'templates/error.html'

@@ -1,4 +1,4 @@
-app.controller('GoogleCtrl', ['$scope', '$http', function ($scope, $http) {
+app.controller('HttpCtrl', ['$scope', '$http', function ($scope, $http) {
 
     this.getGoogle = $http({
       method: 'GET',
