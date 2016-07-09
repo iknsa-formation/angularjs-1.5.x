@@ -1,9 +1,22 @@
 <div class="jumbotron">
+    <h2>Truncate filter</h2>
+    <p>{{ aLongString | truncate:15 }}</p>
+</div>
+
+<div class="jumbotron">
     <p>Amount = {{ amount }}</p>
+
     <hr>
+
     <h2>Filtering currency within template</h2>
     <p>Amount in currency = {{ amount | currency:"€" : 2 }}</p>
+
     <hr>
+
+    <h2>Filtering currency within controller</h2>
+    <label for="filtered-amount">Nombre à transformer en monnaie</label>
+    <input type="text" name="filtered-amount" id="filtered-amount" ng-model="amountToFilter">
+    <p>Amount in currency = {{ filteredAmount }}</p>
 </div>
 
 <div class="clearfix well">

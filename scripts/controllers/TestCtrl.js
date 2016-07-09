@@ -3,12 +3,18 @@ app.controller('TestCtrl', ['$scope', '$filter', function($scope, $filter){
     $scope.who = ' tu';
     $scope.what = ' vas bien? ';
 
-    $scope.amount = 245.546;
-
     $scope.$on('evt', function (evt, msg) {
         console.log('Reçu dans parent : ' + msg);
         $scope.messageAuxDescendants = msg + 'Renvoyé';
     });
+
+    $scope.amount = 245.546;
+
+    $scope.$watch('amountToFilter', function(newValue, oldValue) {
+        $scope.filteredAmount = $filter('currency')(newValue, '£', 0);
+    });
+
+    $scope.aLongString = 'proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
 }]);
 
 app.controller('ChildCtrl', ['$scope', function($scope){
