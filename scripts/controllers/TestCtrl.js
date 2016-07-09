@@ -1,7 +1,9 @@
-app.controller('TestCtrl', ['$scope', function($scope){
+app.controller('TestCtrl', ['$scope', '$filter', function($scope, $filter){
     console.log('in TestCtrl');
     $scope.who = ' tu';
     $scope.what = ' vas bien? ';
+
+    $scope.amount = 245.546;
 
     $scope.$on('evt', function (evt, msg) {
         console.log('Reçu dans parent : ' + msg);

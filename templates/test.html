@@ -1,3 +1,11 @@
+<div class="jumbotron">
+    <p>Amount = {{ amount }}</p>
+    <hr>
+    <h2>Filtering currency within template</h2>
+    <p>Amount in currency = {{ amount | currency:"€" : 2 }}</p>
+    <hr>
+</div>
+
 <div class="clearfix well">
     <div class="col-xs-6">
         <h1>Broadcasting</h1>
