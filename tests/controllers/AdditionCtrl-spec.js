@@ -15,5 +15,16 @@ describe('AdditionCtrl', function() {
         it('should return added numbers', function() {
             expect($scope.addNumbers()).toEqual(5);
         });
+        it('should return added numbers', function() {
+            expect($scope.addNumbers()).not.toEqual(8);
+        });
+
+        it('should return 25', function() {
+            $scope.first = 12;
+            $scope.second = 13;
+            expect($scope.addNumbers()).toEqual(25);
+            expect($scope.addNumbers()).not.toEqual(-25);
+            expect($scope.addNumbers()).not.toEqual(0);
+        });
     });
 });
