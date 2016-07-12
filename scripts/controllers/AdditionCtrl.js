@@ -7,4 +7,4 @@ tests.controller('AdditionCtrl', ['$scope', function($scope){
     $scope.addNumbers = function() {
         return $scope.first + $scope.second;
     }
-}])
+}]);
