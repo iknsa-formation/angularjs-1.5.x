@@ -1,5 +1,8 @@
 # AngularJS course with friends api
 
+## PPT Presentation
+The powerpoint presentation is on the drive [here](https://drive.google.com/file/d/0B9HVbv29cDuvdWRhZDJxNk51bkE/view?usp=sharing)
+
 Prefer a unix base system instead of windows as some node modules dont work properly on windows.
 
 **If you must use windows, install [Git Scm](http://www.git-scm.com/) and run all your commands from git bash**
